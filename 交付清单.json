@@ -1,0 +1,1231 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 32,
+      "sha256": "23302dd90b8bb74b44d365fafef8df20f809b61cb347023951ecf60a88a29651"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 112,
+      "sha256": "d3f06685f289eadaa676a9583ec52db09f0b040276d1b3b71161acc9eaa8e34c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5434,
+      "sha256": "c3943647ceec3792835f385a3fa289fc54672139076a2f15c0c6a3db6c0358a4"
+    },
+    {
+      "path": "代码/admin-frontend/.env.example",
+      "bytes": 135,
+      "sha256": "53c4d10eeb62a883583f6123f9920fa63e27f538e1d9af23e1c0ee9f82b1d3e9"
+    },
+    {
+      "path": "代码/admin-frontend/index.html",
+      "bytes": 450,
+      "sha256": "108c8122ea5dda62ec18a699fa9c13d95fcb07fec0a329268205a2db8c438379"
+    },
+    {
+      "path": "代码/admin-frontend/package-lock.json",
+      "bytes": 32603,
+      "sha256": "73259583b3f087e2312f9f0bc8bf3ee64753496a889f437200cb0f3f259f9797"
+    },
+    {
+      "path": "代码/admin-frontend/package.json",
+      "bytes": 333,
+      "sha256": "2737505e1144996046a1de9655b37f9d7cd489f3191d6decbd21f207522dd46c"
+    },
+    {
+      "path": "代码/admin-frontend/src/api.js",
+      "bytes": 4371,
+      "sha256": "cdc2e96a7a96fc6f91d88083ec0d8a703ce1bd8e8f70eebfbce43f973c6e1fe8"
+    },
+    {
+      "path": "代码/admin-frontend/src/App.vue",
+      "bytes": 3364,
+      "sha256": "76b8f77beb10184e92a619932cbda4853172813d4a6686d95bd8a53da29dbb83"
+    },
+    {
+      "path": "代码/admin-frontend/src/main.js",
+      "bytes": 112,
+      "sha256": "e6989f43be872be95a6bcf4185151038b63e88fc2ff7b4a776b654b909804598"
+    },
+    {
+      "path": "代码/admin-frontend/src/store.js",
+      "bytes": 6440,
+      "sha256": "92954865c010a1bd4452181e8acdd8dd8ff65687c3ab9c413eca53c2a6d78732"
+    },
+    {
+      "path": "代码/admin-frontend/src/styles.css",
+      "bytes": 14129,
+      "sha256": "99c5388f5fd6b8ff6f49fb1b4e7164fea7de04c741afc784c3bee63dd39c8a01"
+    },
+    {
+      "path": "代码/admin-frontend/src/views/RunsView.vue",
+      "bytes": 7542,
+      "sha256": "6e45167b138f0cdceedf39e36fd1480e85709aaa3a30b9ef5fadf962eb1e7b42"
+    },
+    {
+      "path": "代码/admin-frontend/src/views/WorkbenchView.vue",
+      "bytes": 8307,
+      "sha256": "49336465fac366990b5d1560ee330265c497332175664e818a3b6d16c764d69d"
+    },
+    {
+      "path": "代码/admin-frontend/start.ps1",
+      "bytes": 1375,
+      "sha256": "51c29804594333f706427ea8a6f51b28d6b9bf6bad660ac79bf5c0f5322f9892"
+    },
+    {
+      "path": "代码/admin-frontend/stop.ps1",
+      "bytes": 429,
+      "sha256": "1e91ecc68da859b7da499110e48828b239681209021928cc51f27b2a91576042"
+    },
+    {
+      "path": "代码/admin-frontend/vite.config.js",
+      "bytes": 153,
+      "sha256": "1ecf93c09f57e98c1dcf75958df04f4e2edd2bb62ab6bde13dd5bb82d2321498"
+    },
+    {
+      "path": "代码/ai-service/.env.example",
+      "bytes": 1153,
+      "sha256": "9c7b64a3682647222a10f2fa7c979d491f4ed725e786654a6586b0206977613f"
+    },
+    {
+      "path": "代码/ai-service/.gitignore",
+      "bytes": 152,
+      "sha256": "2c63a4e1e293a54268392f3f6959fedad5f20e6cf4fa720fd8bbe88327ea1a6a"
+    },
+    {
+      "path": "代码/ai-service/atguigu/__init__.py",
+      "bytes": 40,
+      "sha256": "eeafbadf62c0dac15ea24216620b55698ebbeaa277c3f5fd4a88f963c93ce41c"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/factory.py",
+      "bytes": 1667,
+      "sha256": "703f6ab0a5708ec1890da72766145174d8aee7d18d82173d8a858b97b13cad3b"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/dynamic_prompt.py",
+      "bytes": 2579,
+      "sha256": "e0eb844d9a76a0f0c928ce4e0311632d02f960daae34000493d29b6f4fa97a11"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/errors.py",
+      "bytes": 1267,
+      "sha256": "f819370beb6a893e3a73a02f374aa2d85826a4194c5b81d3b4db65b317cc7246"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/flows/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/flows/catalog.py",
+      "bytes": 12704,
+      "sha256": "346e769a97b34f7b20048b53c5af99ff05c1dc4e7840b7eb9e254c82f045d981"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/flows/contract.py",
+      "bytes": 4025,
+      "sha256": "3d974ab6b8377a043ace577bb7b1c8b71505430cdd54a59b096f48d7ce839425"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/flows/definition.py",
+      "bytes": 1191,
+      "sha256": "688cab8262d25e53d3b8204baad0f74634cf2245dfa0e36cc55c9dfec766003d"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/flows/planner.py",
+      "bytes": 11903,
+      "sha256": "97eda45971f02e72ca95ce7312c8bb59fbeecea95b2abce18ed29b9811e5a64b"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/flows/reducer.py",
+      "bytes": 10130,
+      "sha256": "d634425a11f845a9476d7a7dd370ebd8ca608cb1eb333d34d1da82872b6dff21"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/knowledge/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/knowledge/output.py",
+      "bytes": 1016,
+      "sha256": "689c65a8a961e8f3608ff74a859e3e768173ddbacbdb75813919ceb409a182e2"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/knowledge/policies/legal-support-policies.json",
+      "bytes": 7415,
+      "sha256": "96c9524613cb7620928c38eed86a21b068deac2848bd8010fb4a98310ce191ce"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/knowledge/service.py",
+      "bytes": 4308,
+      "sha256": "f206b9a0fabed7ff07350c277c81de5611f9d9febc46ebd1d6fcf580b07592ec"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/rules/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/rules/action.py",
+      "bytes": 3916,
+      "sha256": "8be55fca4704df7a042da34a8b20346aa72c24408a39d305e007cb0e5c053320"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/rules/correction.py",
+      "bytes": 1183,
+      "sha256": "cc3fa6fd78f272e2cfb777628654cba1918010725d58f627108ea5a105d5974f"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/rules/fact.py",
+      "bytes": 7786,
+      "sha256": "6f962c03ca9c5dbdc2ae8b7b7e2e95b56cf26b968542e4fb3c8c6f6244a43a2d"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/context.py",
+      "bytes": 3796,
+      "sha256": "2823bbb4c3dcc7076dd6b3528b2957898a86496e594a3c3350de413d9a82fc33"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/coordinator.py",
+      "bytes": 11531,
+      "sha256": "a46c05bd00f1cf593d8741f67b02400f0bd19da5a2566156de23fb690501a882"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/events.py",
+      "bytes": 1370,
+      "sha256": "c5d2958b9c9c7daebcada43191917ff1cdc6326709247fe88593cdd7a8223eb8"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/executor.py",
+      "bytes": 9845,
+      "sha256": "ba191abd41258fea4dc0befca7f0cfc8b673d515788e48f7f07b6fc9f4b2ada1"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/fixture_agent.py",
+      "bytes": 26500,
+      "sha256": "bf15cd11fbbb23b1c6d48f74dac842b83556891f1c71bec7bf066c4a152a8083"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/fixture_policy.py",
+      "bytes": 15167,
+      "sha256": "7d8b5a71a186baba9da93f240f4c7a65193aa542cec5043c55b30435d63311fc"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/output.py",
+      "bytes": 5429,
+      "sha256": "01fa88031e5775aa1f291f4a1c230737b903a4f5832d90e90831506fdb96bdfd"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/policy_runner.py",
+      "bytes": 4497,
+      "sha256": "d3cc2637ef3b45187d40a0f4f0e97121d6375adb0b193667cd414fa465a3a84f"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/run/runtime.py",
+      "bytes": 1604,
+      "sha256": "4708a88ecf73be60c8c39412e50373c676437fe1b0bbf218002b15fdbb1fba52"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/skills/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/skills/catalog.py",
+      "bytes": 4586,
+      "sha256": "3b6cbd2d9d86dadbd2e3d8fdfae02f03db14d978fbb9e7b5cfe6dbaa32101cb4"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/skills/definition.py",
+      "bytes": 864,
+      "sha256": "633fffa54c809406cf59f81db9236809ed921e115b0ab705f104987b1ff6fe4b"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/skills/middleware.py",
+      "bytes": 1765,
+      "sha256": "1c46bc4b213927c0a71ddd81c4386b9b48d7031b7e1a6ce31208bdbcf09c5c9e"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/__init__.py",
+      "bytes": 28,
+      "sha256": "33d337b0fb6f1bf8a8778ce0c5f515ee3606d7bec7e72e4c5ddba22c02823d80"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/catalog.py",
+      "bytes": 1961,
+      "sha256": "0b16acd929ace426ebdd269ed03b84ddce31d38fe9e3e202cee3b94934a0a0a7"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/executor.py",
+      "bytes": 6557,
+      "sha256": "245c934f264e692e0d53b364964832007871a248a425ee52ec43de48d8c456ee"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/output.py",
+      "bytes": 2971,
+      "sha256": "959b07497ac9cdd6d53c4af8825ab765a206ffb15001038437449af783416fd2"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/read.py",
+      "bytes": 4509,
+      "sha256": "f41ff0697eede463b1836e74f6ecff50c10fe042a40413c80ec3f5e69f9a16e4"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/service.py",
+      "bytes": 6730,
+      "sha256": "23e203b584b42d7c3afd4f3cf6749e92e7946f9821df0f98322836129ba64ae0"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/skill.py",
+      "bytes": 1517,
+      "sha256": "5b97a30d1d45d7d6706275ad4af4f4464686833ac5d974121d9586f6ff7e6b3f"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/tools/snapshot.py",
+      "bytes": 2053,
+      "sha256": "6cdddd2aa17d115597f2e42fa6712819db3a0a471addac393ab5ed164155c0c6"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/validator/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/validator/action.py",
+      "bytes": 4029,
+      "sha256": "0494ff060aafa04407e9d78bf4d72cf9581d3e7fbe3b6d11728bb9557bf62636"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/validator/answer.py",
+      "bytes": 8786,
+      "sha256": "1cd5d80c5cdfe364d56ea15a6c68f5affbcb68034c9ed1f44060ee9c69732e52"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/harness/validator/output.py",
+      "bytes": 1759,
+      "sha256": "1f0d797ae78903d1c9827493cc50f629fafe37f9f7734932e7d0c3c1ad3dab93"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/llm/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/llm/adapter.py",
+      "bytes": 5659,
+      "sha256": "e5695e0647fa926b8c03c44d0d3672a05e00eb890fc999088d8fb0ac98ebf144"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/llm/output.py",
+      "bytes": 4262,
+      "sha256": "95045d82eef33cc64344f87bfd1340aaf13c136b480fae83b094fc92a9ac7d74"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/llm/policy.py",
+      "bytes": 5868,
+      "sha256": "864698ae836bd8a5c8699b1751da916e00891c597139225ea9e0e714cc4a575c"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/llm/policy_prompt.py",
+      "bytes": 4016,
+      "sha256": "c51b356048396adf7cc186ec2ab0d77401149a59544231ab8655e673a9ad011f"
+    },
+    {
+      "path": "代码/ai-service/atguigu/agent/llm/prompt.py",
+      "bytes": 2116,
+      "sha256": "522050974cfe1ba1aec8367b3c1b8a88d482d339b1709ab10a958826be2778a2"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/__init__.py",
+      "bytes": 30,
+      "sha256": "74c7cf91d7d9f4bf192fc323bec8c52f5a282d41e43958b421d16fbeba3427fc"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/app.py",
+      "bytes": 3387,
+      "sha256": "eeba933ef742cf4cf185ef747a2b8abf7ea0d1390db156216759d4f33db67545"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/dependencies.py",
+      "bytes": 2398,
+      "sha256": "4e777f379d5e68e9a778883c5ecfdad380ba57781d856403b85b0fdd7bdeb5a9"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/repositories/__init__.py",
+      "bytes": 25,
+      "sha256": "3c183bed11829f246c84b5a0730e8714535591bef6bf45d38e3bd3f238e1e3e5"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/repositories/run.py",
+      "bytes": 949,
+      "sha256": "af0ba11b4973b7af906255d67fb87f68910c7774e765ec4017fc154ccddacf4d"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/repositories/tool.py",
+      "bytes": 1179,
+      "sha256": "b74cb7f6f60cf6ab00ddf938a9bd4ce1c735242177a0981ea0021eddd127eae3"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/routers/__init__.py",
+      "bytes": 24,
+      "sha256": "b6275d84cae2e4510aef5533208f84a7742ab2895312b094477eb9ea752f0878"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/routers/admin.py",
+      "bytes": 2041,
+      "sha256": "17b9fc7d00d4b3c01f8a346646cc8dde522e258f318daa0401619ee7584d27e7"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/routers/run.py",
+      "bytes": 3236,
+      "sha256": "5ae1c8f3d00672fe5de065138d21dd930c5285d55d16fee9d0ed37611d5206d4"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/schemas/__init__.py",
+      "bytes": 31,
+      "sha256": "be2f8e11955b5a7f379c3989c4ac36fd9f470994942a3a12685e1022f72d7ccc"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/schemas/auth.py",
+      "bytes": 158,
+      "sha256": "7f83d563e3945099601280b09bcfd929faba84661941bfcee528adfaad387ffb"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/schemas/run.py",
+      "bytes": 2423,
+      "sha256": "b4f1f542754f250e44d2230f61306a780aec05aa62e0cbd0bbf1f9726b9a99a4"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/services/__init__.py",
+      "bytes": 25,
+      "sha256": "22a22dce4f8f50d16fcabba1074267c1fe566a7492fa4adfc22fe370f0c3b30a"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/services/admin.py",
+      "bytes": 6590,
+      "sha256": "a3f278bbe8c99ccc61ab1700139e421cad422e8737cb6878d8ccfcf2287e15f5"
+    },
+    {
+      "path": "代码/ai-service/atguigu/app/services/auth.py",
+      "bytes": 1792,
+      "sha256": "15b68dcd758946b83eb3959643e4e419aa4eae35dc79d25c458c10d5658ee6cb"
+    },
+    {
+      "path": "代码/ai-service/atguigu/common/__init__.py",
+      "bytes": 31,
+      "sha256": "83f004ced936bb460d7be6c30714eb5005f234ec1b0e85918de66e39339af986"
+    },
+    {
+      "path": "代码/ai-service/atguigu/common/config.py",
+      "bytes": 3553,
+      "sha256": "e70cf12f4a3d0dd4c81d1efb37dadff246e51ccbb82a76c330c853dcb82a8749"
+    },
+    {
+      "path": "代码/ai-service/atguigu/common/event_loop.py",
+      "bytes": 472,
+      "sha256": "6063070aba8e544655d8cd3bf4c2f74527affb840558dcd704809efa55283fed"
+    },
+    {
+      "path": "代码/ai-service/atguigu/common/utils.py",
+      "bytes": 191,
+      "sha256": "1f559c5aec33c49661dc3e5c3ccc3e17ec108a5bc617952cd055ce00724e8257"
+    },
+    {
+      "path": "代码/ai-service/atguigu/infrastructure/__init__.py",
+      "bytes": 25,
+      "sha256": "218393c53ed7a0415e552be49486d6047e13e0d4fa90be2d1b649db80c596a6f"
+    },
+    {
+      "path": "代码/ai-service/atguigu/infrastructure/client.py",
+      "bytes": 2976,
+      "sha256": "4f54556d275ec68cbcef935cf19159e8e38947167884398768aaf5d845199054"
+    },
+    {
+      "path": "代码/ai-service/atguigu/infrastructure/db.py",
+      "bytes": 748,
+      "sha256": "c4a47ebdd67767e8cfb3e0f004cfb4cbed9c1baafda0148fbf9e96f48b95583e"
+    },
+    {
+      "path": "代码/ai-service/atguigu/infrastructure/init_db.py",
+      "bytes": 402,
+      "sha256": "a0cef64d14f8617b528e712f69bc3d73079fd3415666870e3fa274d8810ae91d"
+    },
+    {
+      "path": "代码/ai-service/atguigu/main.py",
+      "bytes": 447,
+      "sha256": "da44cbb903859b96dacba3eeee4a346c57d7b067987d7b5269d721334cbf468d"
+    },
+    {
+      "path": "代码/ai-service/atguigu/models/__init__.py",
+      "bytes": 25,
+      "sha256": "a828ba564d4454fa879579c808644e9989a74d55b1944716a1e3979f19394e98"
+    },
+    {
+      "path": "代码/ai-service/atguigu/models/models.py",
+      "bytes": 4696,
+      "sha256": "9e9d78b54a5f609560c54aea1b1ea70783ea42a6591e31afdbfddae15ad756f3"
+    },
+    {
+      "path": "代码/ai-service/pyproject.toml",
+      "bytes": 575,
+      "sha256": "b76b6eb8074bde94306e0063616d2958665c93f1a438adcb448c7119d06f8836"
+    },
+    {
+      "path": "代码/ai-service/pytest.ini",
+      "bytes": 60,
+      "sha256": "32d66d847f40bac2a5925ed6bc1de269fa39697baf1d47088aae8906454829bf"
+    },
+    {
+      "path": "代码/ai-service/tests/ai_probe.py",
+      "bytes": 3567,
+      "sha256": "f8900eab595836bf005ff2253693bcee0f1f6c67960cbf6421fd1f2fb272ec9b"
+    },
+    {
+      "path": "代码/ai-service/tests/flow_probe.py",
+      "bytes": 3796,
+      "sha256": "128302b7820945bd29c30667b3bdfae85b6f8e0adaff2d9a742a2ef231adcc10"
+    },
+    {
+      "path": "代码/ai-service/tests/test_commitment_negation.py",
+      "bytes": 932,
+      "sha256": "3022de05c8d32e0e8145696d295eb6fa3d3855a741f7be529423337552b9ce9b"
+    },
+    {
+      "path": "代码/ai-service/tests/test_deepseek_adapter.py",
+      "bytes": 1812,
+      "sha256": "1cd6049ba7c75fdf128ee7b865cea84457db84fd54530d2b7250b1ab2493ba63"
+    },
+    {
+      "path": "代码/ai-service/tests/test_direct_clarification.py",
+      "bytes": 1116,
+      "sha256": "652be5e8b944dfc32ca8a6d657793d5c99b0e548fc0ee62db57c74241644c743"
+    },
+    {
+      "path": "代码/ai-service/tests/test_fixture_policy.py",
+      "bytes": 3097,
+      "sha256": "7839f8586a3bf1157d6ab0e4265557804f8383d0958d13293784ff9e0051fe02"
+    },
+    {
+      "path": "代码/ai-service/tests/test_knowledge.py",
+      "bytes": 1437,
+      "sha256": "e0fdb714b5bbca8594589731650b06c08d443cc21fbc6421933d97908b203dd5"
+    },
+    {
+      "path": "代码/ai-service/tests/test_policy_planner.py",
+      "bytes": 4969,
+      "sha256": "0102cca6df7b306c11e8f278d3cc39dc02999cd5eca5d075de313c04e976db81"
+    },
+    {
+      "path": "代码/ai-service/tests/test_validator.py",
+      "bytes": 6768,
+      "sha256": "cdf207240c492f3e1f0ac2202f3de9e0c396d9077affb46918d583f8c549f477"
+    },
+    {
+      "path": "代码/customer-service/.env.example",
+      "bytes": 816,
+      "sha256": "6cb1f81edf3302deb6aef1c5ecdcb52d80acf460bf076cc214b6b37406a2b983"
+    },
+    {
+      "path": "代码/customer-service/atguigu/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/app.py",
+      "bytes": 786,
+      "sha256": "d7177f59d77ff607438bd2b4441e97b42d5a5fb2d53eab5ef8c18f02b21157ca"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/dependencies.py",
+      "bytes": 2456,
+      "sha256": "9944fd8d845843069470484108cbfdbeb61f1d8d153740bae3399951a422c5d7"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/admin/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/admin/admin.py",
+      "bytes": 1374,
+      "sha256": "cee5ee3cfe521b17caa7c18276142c40a0f1392566075aa69e1576f9af47420d"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/admin/handoff.py",
+      "bytes": 2217,
+      "sha256": "668ef92c53ad6630531694343993562043ec1699c996bb5e7eca00bd164bda07"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/chat/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/chat/conversation.py",
+      "bytes": 1884,
+      "sha256": "4028cf2f27cbf02ae8d3615810b7a763d835a13decaeb643d4b69a8b40ee0940"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/chat/flow.py",
+      "bytes": 1060,
+      "sha256": "d52f6b729016b0d92bd39311390d2bc3817174fcabb6e4142f1df73d8dc385c6"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/chat/message.py",
+      "bytes": 3199,
+      "sha256": "a0c6347f3eadf7313d14f1b3a0439274f488f61cadc8df58b05e0ec68908363a"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/chat/turn.py",
+      "bytes": 3890,
+      "sha256": "c312ddbdadb31548c245739b396c426e869c3cfe914c018c2ba4a86f3b9d5d55"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/respositories/realtime.py",
+      "bytes": 1326,
+      "sha256": "d4f9728ece2c4dbb284b1250c3a5ad9c7e8d9a8163dd3d9c6b5a4f51023f5e5a"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/admin/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/admin/admin.py",
+      "bytes": 664,
+      "sha256": "ad066ec6e9a1cce0240ca6151cbe4983033f4d8d2d96adb7219c3d30f75d2171"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/admin/handoff.py",
+      "bytes": 2592,
+      "sha256": "f4dfdd013fdda29fece796d1fa0df4c8c10c8b2a7dec08b09534ee811c6e8ae4"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/chat/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/chat/conversation.py",
+      "bytes": 1595,
+      "sha256": "f8ca8f6adca7cf08d5bce62a3a9c7da4ef8fc332dd80310ac329d04b5868e7d7"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/chat/message.py",
+      "bytes": 1333,
+      "sha256": "5519804d75b9c4f01733176a48b6953dec843fa8047a8afa0469531441eab250"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/hello.py",
+      "bytes": 430,
+      "sha256": "0e5d1e0ba06c497084c128e89dac7ae5b39fe7244762cdd5debe96d47ab33073"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/routers/realtime.py",
+      "bytes": 2097,
+      "sha256": "a37d74b2562ceac4bf12f3326250a8a9497c1dd1c3edfd0df7a6d05a6e27337e"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/admin/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/admin/admin.py",
+      "bytes": 210,
+      "sha256": "90448ac56bb870b5b4bfe8ec794d9b96a024071c073f6007159a11f7c59917e1"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/admin/handoff.py",
+      "bytes": 822,
+      "sha256": "9f646e435b65fd88661355974f22aa11ae0d98dab5ab9ca63c98d86650b7e167"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/admin/user.py",
+      "bytes": 169,
+      "sha256": "ca8c42dfcfbb31954bcf789d296cda594d3b75dc7c3aae313f84c3885277abfc"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/chat/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/chat/conversation.py",
+      "bytes": 1514,
+      "sha256": "ec647a089865a061c4b170ce9802904285818fc8cee665501b97cdc423a8f35f"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/chat/flow.py",
+      "bytes": 5440,
+      "sha256": "d37769f21fb4bbced9f325e46b5ff8c935bf9cb3e20c15dcf89d5ab1ff7ac117"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/chat/message.py",
+      "bytes": 2297,
+      "sha256": "a30c65135dbc06cce4c6b3ca52436dd49c905b31a86e9d68abcc64c2cabdbad3"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/schemas/event.py",
+      "bytes": 407,
+      "sha256": "aef7190076cc1b3d48554114a4b246b8fe90874a6d74dfd619c4d9b0daa512eb"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/admin/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/admin/admin.py",
+      "bytes": 359,
+      "sha256": "d941f37db69fbcbd2a28ef15c43abdc1c0fa05d3978122ecc41b6890991b251f"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/admin/auth.py",
+      "bytes": 2499,
+      "sha256": "8ca1c798c4a4698f97ca7e2df054098dae21eabae429bf148ccb3c7b6a634750"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/admin/handoff.py",
+      "bytes": 9122,
+      "sha256": "492a74c84f3ff7c17d6476ae7e2a63a6494b9687e1b0a99441463f77c134aadb"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/chat/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/chat/conversation.py",
+      "bytes": 5164,
+      "sha256": "1828c265144b09bcd36ca069b9c890a8b7c6481a03914a7eae197139b4fed5eb"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/chat/flow.py",
+      "bytes": 10381,
+      "sha256": "951aac0f1fd0c3bd9337c375a293fec29e80d7e9ed9a27f99d5e47439aad7c7c"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/chat/message.py",
+      "bytes": 8428,
+      "sha256": "e242620664cce3dc1d4ef2bcd234ae88168b23a13207617187dd6be312b7be04"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/chat/turn.py",
+      "bytes": 10498,
+      "sha256": "bb9215f839e17679cb5de77741f22874f4bfe232a009585636b4bf1b9c1aed52"
+    },
+    {
+      "path": "代码/customer-service/atguigu/app/services/realtime.py",
+      "bytes": 3887,
+      "sha256": "c71a18c406c53532a62120a3ecfb5ccb0e58967e0022976d602a78c52b94a00e"
+    },
+    {
+      "path": "代码/customer-service/atguigu/common/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/common/config.py",
+      "bytes": 2090,
+      "sha256": "b5f5ada8c7b1cad11d14613100c0c76742b2e5556647a243ea6315cd04f0c3cf"
+    },
+    {
+      "path": "代码/customer-service/atguigu/common/event_loop.py",
+      "bytes": 285,
+      "sha256": "19d093a22612395e3853d1fea039cb02cf5aede2de06514c99ba4faff688929c"
+    },
+    {
+      "path": "代码/customer-service/atguigu/common/utils.py",
+      "bytes": 335,
+      "sha256": "ee545b1ba8312998aa19e654560c6e78099bb54796ccc67a7d68eda6fd91491a"
+    },
+    {
+      "path": "代码/customer-service/atguigu/infrastucture/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/infrastucture/db.py",
+      "bytes": 2332,
+      "sha256": "144788aabc2dcc1355e791bb347fbf28d61ebdb81211ac4e831a4c4c537396ce"
+    },
+    {
+      "path": "代码/customer-service/atguigu/infrastucture/init_db.py",
+      "bytes": 472,
+      "sha256": "22eb8a78276fcf49ee96886fed4dd88517283e790cb88eef880f0d13c116d777"
+    },
+    {
+      "path": "代码/customer-service/atguigu/infrastucture/redis.py",
+      "bytes": 168,
+      "sha256": "e659456d81e4dd3199ce64e4d1aed30b1bb916dd3920a3ad6287397d40649070"
+    },
+    {
+      "path": "代码/customer-service/atguigu/main.py",
+      "bytes": 447,
+      "sha256": "944911bad99301e00e61f1a0e0afc499798705fafc5cb92eada949c4a4e1d835"
+    },
+    {
+      "path": "代码/customer-service/atguigu/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/models/models.py",
+      "bytes": 9183,
+      "sha256": "a213d65fe99d5b79acd4ccc75ad829c8dd59af1f116b6de90eec23de417e42e4"
+    },
+    {
+      "path": "代码/customer-service/atguigu/test/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/test/redis_pub_sub.py",
+      "bytes": 1265,
+      "sha256": "6f79f51184b2aff40fb9031a0caa940561b4e474d3d0551bbf783a955344ea72"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/ai/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/ai/gateway.py",
+      "bytes": 5676,
+      "sha256": "fb1a39a1b2e1dcaa4098977b76304ca84b19b57cefb52290d87802b68f04bdb6"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/ai/parser.py",
+      "bytes": 2286,
+      "sha256": "185dd82c94275445ff61807891f51b795392d93c8ed5210d411c5f9d474fef19"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/ai/result.py",
+      "bytes": 6522,
+      "sha256": "715a83f37cd0b22f263ed4bab9b5fd23db1456fafb97c9cba8d698dfe7764861"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/ai/settlement.py",
+      "bytes": 7601,
+      "sha256": "7c3a28db02c3a47cb1624bea7da66a5d760098c19d666366cbca97d1dd8a776e"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/ai/worker.py",
+      "bytes": 8717,
+      "sha256": "2e95f3daeb8269e19bfa79036cf0593b628d3f5eec51bbfb5626970df2fd76af"
+    },
+    {
+      "path": "代码/customer-service/atguigu/worker/realtime.py",
+      "bytes": 2929,
+      "sha256": "e68e891c4c6a6361958ff17079153cdd5b859654b5c0f3a0f2cb032314b8cbaa"
+    },
+    {
+      "path": "代码/customer-service/migrations/002_legal_flow.sql",
+      "bytes": 2227,
+      "sha256": "8fc872aac7f1bac3997b97199d13d86c7ea3344f0e3c9f978a0c2a1937c2e033"
+    },
+    {
+      "path": "代码/customer-service/pyproject.toml",
+      "bytes": 464,
+      "sha256": "869d7f4d79fb4509612d4e2aa4457bdba279decefd1d9b69d202e7ed51414013"
+    },
+    {
+      "path": "代码/customer-service/pytest.ini",
+      "bytes": 60,
+      "sha256": "32d66d847f40bac2a5925ed6bc1de269fa39697baf1d47088aae8906454829bf"
+    },
+    {
+      "path": "代码/customer-service/tests/conftest.py",
+      "bytes": 1986,
+      "sha256": "91842fc1ae9d0644dde9705dae9b5ee2f740add10cddc8c17a63c247d923519b"
+    },
+    {
+      "path": "代码/customer-service/tests/e2e_human_handoff.py",
+      "bytes": 9433,
+      "sha256": "1c29074b3be6cba96c619ea6c42c07d7120338251b79102c5361385fba3e97da"
+    },
+    {
+      "path": "代码/customer-service/tests/e2e_probe.py",
+      "bytes": 1678,
+      "sha256": "8d4774b141581e13c3edc6c9d504abac2d846a45d143132de117fb1d1477d079"
+    },
+    {
+      "path": "代码/customer-service/tests/order_flow_probe.py",
+      "bytes": 1779,
+      "sha256": "ad50d23114c8b87420461b04399c860008a2d65943a93f42c010d3306a4258d1"
+    },
+    {
+      "path": "代码/customer-service/tests/test_flow_state.py",
+      "bytes": 4361,
+      "sha256": "7af3287b8c1815b89806eef6b3ad60a4ed6c7cb81bf74872ed9183eac9083b24"
+    },
+    {
+      "path": "代码/customer-service/tests/test_handoff_resume.py",
+      "bytes": 2159,
+      "sha256": "6bf61d932e7adabe96d40456d3e927680e3bc8f0e57261a07f9dc818c5e6c378"
+    },
+    {
+      "path": "代码/customer-service/tests/test_message_api.py",
+      "bytes": 5286,
+      "sha256": "6405b9bedb0adea0936cf88c5fd50ce4fbc17c0f91db69df2d96897782179745"
+    },
+    {
+      "path": "代码/customer-service/tests/test_settlement.py",
+      "bytes": 8363,
+      "sha256": "798f295ec6d02e998330a1ac03add31bd39c5e7598444f2d24ad58c391255914"
+    },
+    {
+      "path": "代码/deploy/docker-compose.yml",
+      "bytes": 1118,
+      "sha256": "5a783ee73e918933a71c2f3193b84af359c4b7362395b2e9dc6b89450a36f9cb"
+    },
+    {
+      "path": "代码/deploy/init-databases.sql",
+      "bytes": 166,
+      "sha256": "448748f508f8b13f728d9bdd3f6d1d58e8c36a79d4424779b36ac91e663d7463"
+    },
+    {
+      "path": "代码/deploy/reset_demo.py",
+      "bytes": 1440,
+      "sha256": "f661a5b84954772f5a78a86d0da6670872c3ec19cb30e25b9501d827d7838010"
+    },
+    {
+      "path": "代码/legal-business-service/.env.example",
+      "bytes": 443,
+      "sha256": "025d13647496d9a94f5c12fe0dc43d66d572af53378784fbfb85ba94ccc4ede6"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/app.py",
+      "bytes": 10609,
+      "sha256": "9b92e28710c52f90e11b1c084384a52a1ce110f4eb7e6193c027143fbdadaafe"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/auth.py",
+      "bytes": 1955,
+      "sha256": "8bfe531de5cb82ad572ebb900e624d33e9f845b4d4344409ddb83336736c6a32"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/config.py",
+      "bytes": 1395,
+      "sha256": "7bd66fad42d8efd8efc757e69cd8dbda3b16aab14dd25f84fe24f5910f42639b"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/db.py",
+      "bytes": 712,
+      "sha256": "10ae19c1066d4e6449103216f5b9cad1daaddc9ec9ea4e417807a34acaf8e8bc"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/main.py",
+      "bytes": 684,
+      "sha256": "5562a5deae7e8cede86af93712a37957de25de950dc7c494fc9a8278dcbe4e93"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/models.py",
+      "bytes": 8643,
+      "sha256": "832ba9e47abd42472d0540e34296fbcca38220a39552873a5ab7389d26e75ecf"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/schemas.py",
+      "bytes": 3592,
+      "sha256": "7f5779087863930d55599f96b4753c941a5631266f2ba7a4892c3283d37eaafc"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/seed.py",
+      "bytes": 9145,
+      "sha256": "987b6c81d0cd21f4d0fc69f30312316eb686b2e9be88a285de462bce2bddb424"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/service.py",
+      "bytes": 25259,
+      "sha256": "105a532d4c98d565130eb9434e17a8a9435ca6f2022c04d83e68f1f654fde499"
+    },
+    {
+      "path": "代码/legal-business-service/atguigu_legal/utils.py",
+      "bytes": 252,
+      "sha256": "c866df95c3da2cf69f707d1bca427fee70c564b2a9902b3141e08e64b023c49c"
+    },
+    {
+      "path": "代码/legal-business-service/pyproject.toml",
+      "bytes": 475,
+      "sha256": "c8cf77d780ba85773bdbd773c7aef392f8a4da2f125c294c11b828377d174615"
+    },
+    {
+      "path": "代码/legal-business-service/README.md",
+      "bytes": 1465,
+      "sha256": "5b4cc4c83c6952239b8cae7f157520c79b9b8e036490380ccae16a7828494063"
+    },
+    {
+      "path": "代码/pytest.ini",
+      "bytes": 40,
+      "sha256": "efcce6f55356a0fdaf6f9631b9d9a9a92fd1caba8ddce5809b8a77bb998cc3ba"
+    },
+    {
+      "path": "代码/reports/ai-service-tests.xml",
+      "bytes": 4512,
+      "sha256": "5d75fc3a038fb763a9ac9a36ad0b4af44bb70864af3ac7276463895eea8b3f16"
+    },
+    {
+      "path": "代码/reports/browser-acceptance.json",
+      "bytes": 993,
+      "sha256": "8d281ba172c9156d34b0af8a66e1a502f511d40f1969b8ebc63eca17a71bf7d0"
+    },
+    {
+      "path": "代码/reports/contract-tests.xml",
+      "bytes": 1017,
+      "sha256": "c10d799d0e6045edee4380e9014a3f88fe9db95a56c5e1ad428c2060500262af"
+    },
+    {
+      "path": "代码/reports/customer-service-tests.xml",
+      "bytes": 2439,
+      "sha256": "ae84b6b6aaa83e1bec0d831965e692c08cf713c0c554e555e66bd9bad665b4cb"
+    },
+    {
+      "path": "代码/reports/deepseek-acceptance.json",
+      "bytes": 28048,
+      "sha256": "535c5e60875f986c4302d5d00539d3febfea4af6f7288249e74c4105b4300179"
+    },
+    {
+      "path": "代码/reports/human-handoff.txt",
+      "bytes": 2038,
+      "sha256": "54f189f819c777237e62da54be53d57011b8464b3c3101fb6d37bad7bb3aa3e0"
+    },
+    {
+      "path": "代码/reports/project-smoke.json",
+      "bytes": 1226,
+      "sha256": "89eb30a21ba0e7108df5a29339dbe019cd4a3ed543944ee7c8e1173b5e472d91"
+    },
+    {
+      "path": "代码/requirements.txt",
+      "bytes": 379,
+      "sha256": "3a87a12ac8c71e61015bb88a37fe470c7ed4cd94bf529f3f401fd74ee0ef4dbe"
+    },
+    {
+      "path": "代码/scripts/browser_acceptance.py",
+      "bytes": 7126,
+      "sha256": "9537b3290df5cc8dc48e18094a51d8e368fd6b00133ffac9e46bd321f3587b46"
+    },
+    {
+      "path": "代码/scripts/export_delivery.py",
+      "bytes": 3168,
+      "sha256": "cb0e8460f43a26b23936861b3d7dddea86fb8fb75f874e6532f9738c36b9ef97"
+    },
+    {
+      "path": "代码/scripts/verify_deepseek.py",
+      "bytes": 5118,
+      "sha256": "4fffa85d22293134d2dc9b4dccd5125e67f9d8d16f00b2f4d3289b1e6fa2bca6"
+    },
+    {
+      "path": "代码/scripts/verify_project.py",
+      "bytes": 3800,
+      "sha256": "a4c1a8ff5063a623b8dd3d62e84c53c6b393d65304d62ec1c4c4b85aa76fcb80"
+    },
+    {
+      "path": "代码/tests/contract/test_contract_mirror.py",
+      "bytes": 4691,
+      "sha256": "83b3d8656f95d24b4fbd3608dbfa06323e00e18dcdc3a6815cb62f2b14ba6773"
+    },
+    {
+      "path": "代码/user-frontend/.env.example",
+      "bytes": 93,
+      "sha256": "7368f0b4f5df499cfcd1bab763902ba0d8edfa086e8d500bc6383f5d845c0f7b"
+    },
+    {
+      "path": "代码/user-frontend/index.html",
+      "bytes": 454,
+      "sha256": "e28df5046029ea00a5cfa08f5c48148d14a46f436a0d7a2e8e134ea38e1003f2"
+    },
+    {
+      "path": "代码/user-frontend/package-lock.json",
+      "bytes": 37289,
+      "sha256": "ebf01ffcf213546f1f410ebf8f08caa3a9b626941e61c7ae8fd22a8611edf454"
+    },
+    {
+      "path": "代码/user-frontend/package.json",
+      "bytes": 332,
+      "sha256": "478131db5284752981abd50264327e42e6afc4e1348b73b7ad805bc30ce048ef"
+    },
+    {
+      "path": "代码/user-frontend/public/product-sprite.svg",
+      "bytes": 3030,
+      "sha256": "959d1934ba8fd51df9d0fd53634c9b17f22da9af578110b6981ad36a1e2d92c3"
+    },
+    {
+      "path": "代码/user-frontend/src/api.js",
+      "bytes": 6008,
+      "sha256": "ff2028385c50637cd7fad899dcb924f4ee387aa6bf664d95a5cab0c4ea054554"
+    },
+    {
+      "path": "代码/user-frontend/src/App.vue",
+      "bytes": 4574,
+      "sha256": "55ca6e67af39303cf4941ac4475bbae5c811f4ea9ad824fede8c34d0979eb40b"
+    },
+    {
+      "path": "代码/user-frontend/src/main.js",
+      "bytes": 112,
+      "sha256": "e6989f43be872be95a6bcf4185151038b63e88fc2ff7b4a776b654b909804598"
+    },
+    {
+      "path": "代码/user-frontend/src/store.js",
+      "bytes": 13465,
+      "sha256": "c795028d2d1033be60d5fdde54e929ebb8ab076359b9e8eefa1d2ebc199030c8"
+    },
+    {
+      "path": "代码/user-frontend/src/styles.css",
+      "bytes": 20582,
+      "sha256": "dd6414570a7e0946d5d9fbd290d850411d37e48b7003b4f44ab45f374d1257c8"
+    },
+    {
+      "path": "代码/user-frontend/src/views/ChatView.vue",
+      "bytes": 6540,
+      "sha256": "d76fbad3945aacaaed3d9543f430b7459ee67d4e658c19036eb502a88e4e9bbc"
+    },
+    {
+      "path": "代码/user-frontend/src/views/HistoryView.vue",
+      "bytes": 2568,
+      "sha256": "b69e9e6e648cd13042e9350106356545cf303b1cccf79179a157d0f59f1fe178"
+    },
+    {
+      "path": "代码/user-frontend/src/views/InvoiceView.vue",
+      "bytes": 6328,
+      "sha256": "6e18bfc5a86b1ba077bc4af27a1e96154eec272d4a94c83eb352cb9856e0c65e"
+    },
+    {
+      "path": "代码/user-frontend/src/views/OrderDetailView.vue",
+      "bytes": 6800,
+      "sha256": "2df918809bb478af423963b3d99b8f8cb5a68fc0b29a34d86c4dce80588c39a4"
+    },
+    {
+      "path": "代码/user-frontend/src/views/OrdersView.vue",
+      "bytes": 2156,
+      "sha256": "eb624c2ef5310d549ab4db32f0066b980b0c76fe3f92ac4cff6de368a7cd87ff"
+    },
+    {
+      "path": "代码/user-frontend/src/views/PlansView.vue",
+      "bytes": 4185,
+      "sha256": "555667607a2d420f736dd4b092b078133b5695d772570a2b8bcb650e1e3547fc"
+    },
+    {
+      "path": "代码/user-frontend/src/views/RefundView.vue",
+      "bytes": 4901,
+      "sha256": "b010596f08373fc854a20a1ffbf5f883f7bc0d0934e7d215409a8a72d06f6f30"
+    },
+    {
+      "path": "代码/user-frontend/start.ps1",
+      "bytes": 1510,
+      "sha256": "f42cf0f92f7a06749822245bb912a13b1b7d2601e35e75e36ed075b7870f2b2c"
+    },
+    {
+      "path": "代码/user-frontend/stop.ps1",
+      "bytes": 428,
+      "sha256": "c9c066bf58feec27b4f7aa389c50c537d2886d58f47f0dd3858bb78606f69be1"
+    },
+    {
+      "path": "代码/user-frontend/vite.config.js",
+      "bytes": 153,
+      "sha256": "53d01615a53f1c469ccfb815666c3cba5f9ad225282574109f8ca76503ce2423"
+    },
+    {
+      "path": "代码/交付说明.md",
+      "bytes": 5274,
+      "sha256": "0bbe125185d53a640179c85e663a4a9c77f1f851a956871617e3cade164d2a05"
+    },
+    {
+      "path": "测试截图/01-DeepSeek客服对话.png",
+      "bytes": 170137,
+      "sha256": "5caa150024e0b2b7944197d52339b89f8357918dbff961381ad2ccd647f86314"
+    },
+    {
+      "path": "测试截图/02-服务套餐.png",
+      "bytes": 124031,
+      "sha256": "1bbede8c985ed15a722d951d77d5f2af0474d6c77f092c61521d23882cc3d1ff"
+    },
+    {
+      "path": "测试截图/03-我的订单.png",
+      "bytes": 97136,
+      "sha256": "42c7a7119ec098eb7fb734ea8cb36404e07e0acfddb4b3cea44c8d801c37ac79"
+    },
+    {
+      "path": "测试截图/04-订单详情.png",
+      "bytes": 123296,
+      "sha256": "915fa074ec619887aeee96a75c1f5b389b458c35468a8fabaaa67aa106a12461"
+    },
+    {
+      "path": "测试截图/05-退款申请页.png",
+      "bytes": 103878,
+      "sha256": "5619c68f9a342f33d5b146b33fc41ab9b178de60053cb2420c662dc3be8c0511"
+    },
+    {
+      "path": "测试截图/06-开票申请页.png",
+      "bytes": 82665,
+      "sha256": "b6f4b4353d24b518e5c08629896b7e1a412a78ada61680cd79600790c9741a1f"
+    },
+    {
+      "path": "测试截图/07-DeepSeek运行审计.png",
+      "bytes": 224641,
+      "sha256": "23ad8c9bd1b7073a06a6fd58672188e8dadce39282ab6efb9b6bfc25e0392241"
+    },
+    {
+      "path": "测试截图/08-人工工作台.png",
+      "bytes": 92930,
+      "sha256": "6ab379357dea2503d4079d99723288bf7d443ee3ac330e259e35567b9b686254"
+    }
+  ],
+  "secret_scan": "passed",
+  "dependency_directories": "excluded"
+}

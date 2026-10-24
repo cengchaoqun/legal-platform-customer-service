@@ -1,0 +1,715 @@
+{
+  "model": "deepseek-flash",
+  "runtime_mode": "DEEPSEEK",
+  "business": "demo",
+  "scope": "真实模型和只读业务工具验收；commit 仅发布页面入口，不执行业务写操作",
+  "passed": true,
+  "results": [
+    {
+      "name": "缺订单澄清",
+      "input": "合同审核套餐我想退款",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_a281972d3e764af8972dc1ca1747b6e8",
+          "message_id": "msg_6eef13d05242464e810e0e08d2ef50be",
+          "content": {
+            "text": "请问你要办理的是哪一笔订单？可以告诉我订单号。",
+            "reply_type": "CLARIFY"
+          },
+          "flow_update": {
+            "patch_id": "run_a281972d3e764af8972dc1ca1747b6e8:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_b731310e3d244a469a37b82e9b270c46",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "REFUND_APPLY",
+              "node": "IDENTIFY_ORDER",
+              "slots": {},
+              "pending_intents": [],
+              "clarification_attempts": {
+                "order_id": 1
+              },
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "REFUND_APPLY",
+            "node": "IDENTIFY_ORDER",
+            "selected_skill": "aftersales-service",
+            "allowed_tools": [
+              "get_order",
+              "list_after_sales",
+              "list_orders",
+              "search_knowledge"
+            ],
+            "required_slots": [
+              "order_id"
+            ],
+            "missing_slots": [
+              "order_id"
+            ],
+            "allowed_next_actions": [
+              "QUERY_BUSINESS",
+              "ASK_CLARIFY",
+              "HANDOFF",
+              "DECLINE"
+            ],
+            "target_resource": {},
+            "planned_action": "ASK_CLARIFY",
+            "allowed_action_codes": [
+              "APPLY_AFTER_SALE",
+              "VIEW_AFTER_SALES"
+            ],
+            "clarify_slot": "order_id"
+          },
+          "clarify_slot": "order_id"
+        }
+      },
+      "run_id": "run_a281972d3e764af8972dc1ca1747b6e8",
+      "intent": "REFUND_APPLY",
+      "tools": [],
+      "input_tokens": 2222,
+      "output_tokens": 168,
+      "elapsed_seconds": 1.19,
+      "error": null
+    },
+    {
+      "name": "多轮补充订单",
+      "input": "ORDER_001，买错套餐了",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_f550b1ebf12d41d3b1e9e6c2f94f0ed5",
+          "message_id": "msg_f16bfce4b59f4db9b4d209be85187fd2",
+          "content": {
+            "text": "已查到订单 ORDER_001（合同审核服务，299.00 元，已支付，当前状态：材料待补充）。\n\n关于退款，需要先说明一个重要情况：这笔订单已有一条退款申请记录，原因是“买错套餐”，申请金额 299.00 元，当前状态为**申请已提交**，退款状态为**尚未退款**。也就是说，申请已提交，但尚未审核通过，也未到账，无需重复提交。\n\n按平台退款政策（2026-10 审核版）：服务尚未开始的订单可以提交退款申请，由平台按订单状态与服务政策审核；审核通过与退款到账是两个不同状态，是否可退、可退金额以订单详情页展示与业务审核结果为准，客服无法预先承诺退款结果。\n\n下一步建议：进入订单详情页查看这条售后申请的审核进展与退款状态；如需补充材料或说明，也可在页面内跟进。",
+            "reply_type": "ANSWER",
+            "action": {
+              "action_code": "VIEW_AFTER_SALES",
+              "label": "查看退款进度",
+              "description": "进入订单详情查看售后申请与退款状态",
+              "href": "/me/orders/ORDER_001?section=after-sales"
+            }
+          },
+          "flow_update": {
+            "patch_id": "run_f550b1ebf12d41d3b1e9e6c2f94f0ed5:flow:1",
+            "base_state_version": 1,
+            "turn_id": "accept_3ebcf3b0d7214405950aa0a04d396c64",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "REFUND_APPLY",
+              "node": "WAIT_USER_SUBMISSION",
+              "slots": {
+                "order_id": {
+                  "value": "ORDER_001",
+                  "source_type": "TOOL_RESULT",
+                  "source_message_id": null,
+                  "source_tool_call_id": null,
+                  "validation_status": "VERIFIED",
+                  "updated_at": null,
+                  "history": []
+                },
+                "refund_reason": {
+                  "value": "买错套餐",
+                  "source_type": "USER_MESSAGE",
+                  "source_message_id": "accept_3ebcf3b0d7214405950aa0a04d396c64m",
+                  "source_tool_call_id": null,
+                  "validation_status": "UNVERIFIED",
+                  "updated_at": null,
+                  "history": []
+                },
+                "after_sale_id": {
+                  "value": "as_e48c38e9a2f2",
+                  "source_type": "TOOL_RESULT",
+                  "source_message_id": null,
+                  "source_tool_call_id": "",
+                  "validation_status": "VERIFIED",
+                  "updated_at": null,
+                  "history": []
+                }
+              },
+              "pending_intents": [],
+              "clarification_attempts": {
+                "order_id": 1
+              },
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "REFUND_APPLY",
+            "node": "IDENTIFY_ORDER",
+            "selected_skill": "aftersales-service",
+            "allowed_tools": [
+              "get_order",
+              "list_after_sales",
+              "list_orders",
+              "search_knowledge"
+            ],
+            "required_slots": [
+              "order_id"
+            ],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "QUERY_BUSINESS",
+              "ASK_CLARIFY",
+              "HANDOFF",
+              "DECLINE"
+            ],
+            "target_resource": {
+              "order_id": "ORDER_001"
+            },
+            "planned_action": "QUERY_BUSINESS",
+            "allowed_action_codes": [
+              "APPLY_AFTER_SALE",
+              "OPEN_ORDER_DETAIL",
+              "VIEW_AFTER_SALES"
+            ],
+            "clarify_slot": null
+          },
+          "clarify_slot": null
+        }
+      },
+      "run_id": "run_f550b1ebf12d41d3b1e9e6c2f94f0ed5",
+      "intent": "REFUND_APPLY",
+      "tools": [
+        "search_knowledge",
+        "get_order",
+        "list_after_sales"
+      ],
+      "input_tokens": 18376,
+      "output_tokens": 1073,
+      "elapsed_seconds": 7.34,
+      "error": null
+    },
+    {
+      "name": "订单查询",
+      "input": "查询订单 ORDER_001 的金额和状态",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_be66d09da7fb48dfaa333074bd704c4d",
+          "message_id": "msg_6b0db1061d5145d09afbb8946940d58e",
+          "content": {
+            "text": "订单 ORDER_001（合同审核服务）的查询结果如下：\n\n- 订单金额：299.00 元（CNY）\n- 支付状态：已支付\n- 服务状态：材料待补充\n- 开票状态：暂无开票记录\n- 下单时间：2026-10-20\n\n目前该订单处于“材料待补充”环节，需要您补齐所需材料后服务才会继续推进。如需查看具体办理进度、补充材料入口或申请开票，可以进入订单详情页操作。需要我为您打开订单详情页吗？",
+            "reply_type": "ANSWER"
+          },
+          "flow_update": {
+            "patch_id": "run_be66d09da7fb48dfaa333074bd704c4d:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_c1e7cdbf7534407e9eea8b08561017d2",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "ORDER_QUERY",
+              "node": "CHECK_ORDER",
+              "slots": {
+                "order_id": {
+                  "value": "ORDER_001",
+                  "source_type": "TOOL_RESULT",
+                  "source_message_id": null,
+                  "source_tool_call_id": null,
+                  "validation_status": "VERIFIED",
+                  "updated_at": null,
+                  "history": []
+                }
+              },
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "ORDER_QUERY",
+            "node": "IDENTIFY_ORDER",
+            "selected_skill": "order-service",
+            "allowed_tools": [
+              "get_order",
+              "list_orders"
+            ],
+            "required_slots": [
+              "order_id"
+            ],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "QUERY_BUSINESS",
+              "ASK_CLARIFY",
+              "HANDOFF",
+              "DECLINE"
+            ],
+            "target_resource": {
+              "order_id": "ORDER_001"
+            },
+            "planned_action": "QUERY_BUSINESS",
+            "allowed_action_codes": [
+              "BROWSE_ORDERS",
+              "OPEN_ORDER_DETAIL"
+            ],
+            "clarify_slot": null
+          },
+          "clarify_slot": null
+        }
+      },
+      "run_id": "run_be66d09da7fb48dfaa333074bd704c4d",
+      "intent": "ORDER_QUERY",
+      "tools": [
+        "get_order"
+      ],
+      "input_tokens": 7148,
+      "output_tokens": 356,
+      "elapsed_seconds": 3.67,
+      "error": null
+    },
+    {
+      "name": "办理进度",
+      "input": "ORDER_002 的合同审核进行到哪一步了",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_46af261a2f6d469b90325ef56e2c348a",
+          "message_id": "msg_25bfad50776448839100b268da51000e",
+          "content": {
+            "text": "ORDER_002 这笔订单的服务名称是「法律咨询服务」（已支付，状态：服务中），并非合同审核类服务，以下是该订单的办理进度：\n\n- 订单已受理：2026-10-18 14:05（已完成）\n- 咨询安排已确认：2026-10-21 11:00（当前节点），咨询时间已确认，可在服务页面查看\n\n目前没有缺失材料需要您补充。业务方暂未提供预计完成时间，具体以服务更新为准。\n\n如需查看详情，可进入订单详情页查看办理进度、发票与售后。",
+            "reply_type": "ANSWER",
+            "action": {
+              "action_code": "OPEN_ORDER_DETAIL",
+              "label": "查看订单详情",
+              "description": "进入订单详情查看办理进度、发票与售后",
+              "href": "/me/orders/ORDER_002"
+            }
+          },
+          "flow_update": {
+            "patch_id": "run_46af261a2f6d469b90325ef56e2c348a:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_79a71fe9e10342178e828efd106dc947",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "SERVICE_PROGRESS_QUERY",
+              "node": "CHECK_ORDER",
+              "slots": {
+                "order_id": {
+                  "value": "ORDER_002",
+                  "source_type": "TOOL_RESULT",
+                  "source_message_id": null,
+                  "source_tool_call_id": null,
+                  "validation_status": "VERIFIED",
+                  "updated_at": null,
+                  "history": []
+                }
+              },
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "SERVICE_PROGRESS_QUERY",
+            "node": "IDENTIFY_ORDER",
+            "selected_skill": "progress-service",
+            "allowed_tools": [
+              "get_order",
+              "get_service_progress",
+              "list_orders"
+            ],
+            "required_slots": [
+              "order_id"
+            ],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "QUERY_BUSINESS",
+              "ASK_CLARIFY",
+              "HANDOFF",
+              "DECLINE"
+            ],
+            "target_resource": {
+              "order_id": "ORDER_002"
+            },
+            "planned_action": "QUERY_BUSINESS",
+            "allowed_action_codes": [
+              "BROWSE_ORDERS",
+              "OPEN_ORDER_DETAIL"
+            ],
+            "clarify_slot": null
+          },
+          "clarify_slot": null
+        }
+      },
+      "run_id": "run_46af261a2f6d469b90325ef56e2c348a",
+      "intent": "SERVICE_PROGRESS_QUERY",
+      "tools": [
+        "get_order",
+        "get_service_progress"
+      ],
+      "input_tokens": 7655,
+      "output_tokens": 434,
+      "elapsed_seconds": 3.2,
+      "error": null
+    },
+    {
+      "name": "发票查询",
+      "input": "ORDER_001 的发票开好了吗",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_7fed307402e2456581817802699b2053",
+          "message_id": "msg_3aa7f607542e4aad97d75376095b8c4e",
+          "content": {
+            "text": "ORDER_001（合同审核服务，金额 299.00 元，已支付）目前的开票状态是「尚未申请开票」，也就是说还没有提交过开票申请，因此发票还没有开具。\n\n如果这笔订单需要开票，可以进入开票申请页面填写发票抬头等资料后提交；提交后可在订单详情中查看开票进度。需要我为你打开开票申请入口吗？",
+            "reply_type": "ANSWER"
+          },
+          "flow_update": {
+            "patch_id": "run_7fed307402e2456581817802699b2053:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_5944798dca634559b3ae96949d0f8068",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "INVOICE_QUERY",
+              "node": "CHECK_ORDER",
+              "slots": {
+                "order_id": {
+                  "value": "ORDER_001",
+                  "source_type": "TOOL_RESULT",
+                  "source_message_id": null,
+                  "source_tool_call_id": null,
+                  "validation_status": "VERIFIED",
+                  "updated_at": null,
+                  "history": []
+                }
+              },
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "INVOICE_QUERY",
+            "node": "IDENTIFY_ORDER",
+            "selected_skill": "order-service",
+            "allowed_tools": [
+              "get_invoice",
+              "get_order",
+              "list_orders"
+            ],
+            "required_slots": [
+              "order_id"
+            ],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "QUERY_BUSINESS",
+              "ASK_CLARIFY",
+              "HANDOFF",
+              "DECLINE"
+            ],
+            "target_resource": {
+              "order_id": "ORDER_001"
+            },
+            "planned_action": "QUERY_BUSINESS",
+            "allowed_action_codes": [
+              "BROWSE_ORDERS",
+              "OPEN_ORDER_DETAIL"
+            ],
+            "clarify_slot": null
+          },
+          "clarify_slot": null
+        }
+      },
+      "run_id": "run_7fed307402e2456581817802699b2053",
+      "intent": "INVOICE_QUERY",
+      "tools": [
+        "get_invoice",
+        "get_order"
+      ],
+      "input_tokens": 7517,
+      "output_tokens": 357,
+      "elapsed_seconds": 3.22,
+      "error": null
+    },
+    {
+      "name": "发票申请入口",
+      "input": "我要给 ORDER_001 申请开票",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_14915f84d35a4b2bbeb3c1277ea7f941",
+          "message_id": "msg_dc3b883af9694325a113053c6c058d11",
+          "content": {
+            "text": "已为您核实订单 ORDER_001（合同审核服务，金额 299.00 元，已支付），当前开票状态为「尚未申请开票」，该订单支持申请开票。\n\n您可以点击下方入口进入开票申请页面，填写发票抬头等资料后自行提交。提交后开票状态才会更新，实际开具结果可在订单详情中查看。\n\n需要我为您打开开票申请页面吗？",
+            "reply_type": "ANSWER",
+            "action": {
+              "action_code": "APPLY_INVOICE",
+              "label": "申请开票",
+              "description": "进入开票申请页面填写抬头资料并提交",
+              "href": "/me/orders/ORDER_001/invoice"
+            }
+          },
+          "flow_update": {
+            "patch_id": "run_14915f84d35a4b2bbeb3c1277ea7f941:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_49bd7e8f48ca420b8e0c957030ec91be",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "INVOICE_APPLY",
+              "node": "WAIT_USER_SUBMISSION",
+              "slots": {
+                "order_id": {
+                  "value": "ORDER_001",
+                  "source_type": "TOOL_RESULT",
+                  "source_message_id": null,
+                  "source_tool_call_id": null,
+                  "validation_status": "VERIFIED",
+                  "updated_at": null,
+                  "history": []
+                }
+              },
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "INVOICE_APPLY",
+            "node": "OFFER_APPLICATION",
+            "selected_skill": "order-service",
+            "allowed_tools": [
+              "get_invoice",
+              "get_order"
+            ],
+            "required_slots": [
+              "order_id"
+            ],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "OFFER_PAGE_ACTION",
+              "ANSWER",
+              "HANDOFF"
+            ],
+            "target_resource": {
+              "order_id": "ORDER_001"
+            },
+            "planned_action": "OFFER_PAGE_ACTION",
+            "allowed_action_codes": [
+              "APPLY_INVOICE",
+              "OPEN_ORDER_DETAIL"
+            ],
+            "clarify_slot": null
+          },
+          "clarify_slot": null
+        }
+      },
+      "run_id": "run_14915f84d35a4b2bbeb3c1277ea7f941",
+      "intent": "INVOICE_APPLY",
+      "tools": [
+        "get_order",
+        "get_invoice"
+      ],
+      "input_tokens": 10517,
+      "output_tokens": 622,
+      "elapsed_seconds": 4.31,
+      "error": null
+    },
+    {
+      "name": "政策检索",
+      "input": "退款政策和到账时间怎么规定的",
+      "passed": true,
+      "event": {
+        "event_type": "run_completed",
+        "event_data": {
+          "run_id": "run_87056d7d62624e67970c55ddbb4b6d63",
+          "message_id": "msg_9274af1fc3f744e9be0454754949f4e7",
+          "content": {
+            "text": "关于退款政策与到账时间，平台现行规则（售后服务政策 2026-10 版，2026-01-01 起生效）规定如下：\n\n**一、退款申请条件与流程**\n1. 服务尚未开始的订单可以提交退款申请，由平台按订单状态与服务政策审核。\n2. 流程节点：提交申请 → 待审核 → 审核通过 → 退款处理。\n3. 请注意：审核通过与退款到账是两个不同状态，审核通过不等于款项已到账。\n4. 是否可退、可退金额以订单详情页展示与业务审核结果为准，客服无法预先承诺退款结果。\n\n**二、到账时间**\n1. 退款审核通过后，由支付渠道原路退回。\n2. 到账时间受支付机构处理进度影响，平台无法承诺固定到账时间，也无法按申请时间推算。\n3. 如需了解具体进度，应查看售后记录中的申请状态与退款状态，而不是按申请时间估算。\n\n**下一步建议**\n- 若您想提交退款申请：可在订单详情页进入退款申请页面，填写原因后提交，需人工审核。\n- 若您已提交申请想查进度：可在订单详情页查看售后申请与退款状态。\n\n如需我为您打开对应页面，请提供您的订单编号（仅用于定位订单，不作为身份凭证）。另外，若您的问题涉及具体案情能否退款的法律判断，我可以为您转接专业人工渠道。",
+            "reply_type": "ANSWER"
+          },
+          "flow_update": {
+            "patch_id": "run_87056d7d62624e67970c55ddbb4b6d63:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_4e9502866abe4172805d86b0f5fb8655",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "POLICY_QUERY",
+              "node": "ANSWERED",
+              "slots": {},
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "POLICY_QUERY",
+            "node": "ANSWERED",
+            "selected_skill": "policy-service",
+            "allowed_tools": [
+              "search_knowledge"
+            ],
+            "required_slots": [],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "QUERY_POLICY",
+              "ASK_CLARIFY",
+              "ANSWER",
+              "HANDOFF",
+              "DECLINE"
+            ],
+            "target_resource": {},
+            "planned_action": "QUERY_POLICY",
+            "allowed_action_codes": [],
+            "clarify_slot": null
+          },
+          "clarify_slot": null
+        }
+      },
+      "run_id": "run_87056d7d62624e67970c55ddbb4b6d63",
+      "intent": "POLICY_QUERY",
+      "tools": [
+        "search_knowledge"
+      ],
+      "input_tokens": 7056,
+      "output_tokens": 529,
+      "elapsed_seconds": 4.17,
+      "error": null
+    },
+    {
+      "name": "投诉升级",
+      "input": "我要投诉服务延误，请升级处理",
+      "passed": true,
+      "event": {
+        "event_type": "run_handoff_requested",
+        "event_data": {
+          "run_id": "run_a6acf830d100485b96586abc0c220384",
+          "reason_code": "COMPLAINT",
+          "queue_code": "platform_aftersales",
+          "summary": "用户投诉服务延误，并明确要求升级处理，需转人工跟进。当前未提供订单号，具体订单与服务类型待人工核实。",
+          "message": "已记录你的投诉诉求，正在为你转接人工客服，请稍候。",
+          "handoff_context": {
+            "intent": "COMPLAINT",
+            "primary_intent": "COMPLAINT",
+            "summary": "用户投诉服务延误，并明确要求升级处理，需转人工跟进。当前未提供订单号，具体订单与服务类型待人工核实。",
+            "order_id": null,
+            "after_sale_id": null,
+            "verified_slots": {},
+            "unverified_slots": {},
+            "conflicts": [],
+            "pending_intents": [],
+            "attempted_steps": [
+              "policy:handoff_requested"
+            ],
+            "failure_reason": "COMPLAINT",
+            "flow_node": "HANDED_OFF",
+            "flow_state_version": 0,
+            "source_message_ids": []
+          },
+          "flow_update": {
+            "patch_id": "run_a6acf830d100485b96586abc0c220384:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_838ae21ad50d46238d6cbac1c7bb229f",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "COMPLAINT",
+              "node": "HANDED_OFF",
+              "slots": {},
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "COMPLAINT",
+            "node": "HANDED_OFF",
+            "selected_skill": "policy-service",
+            "allowed_tools": [],
+            "required_slots": [],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "HANDOFF"
+            ],
+            "target_resource": {},
+            "planned_action": "HANDOFF",
+            "allowed_action_codes": [],
+            "clarify_slot": null
+          }
+        }
+      },
+      "run_id": "run_a6acf830d100485b96586abc0c220384",
+      "intent": "COMPLAINT",
+      "tools": [],
+      "input_tokens": 2224,
+      "output_tokens": 154,
+      "elapsed_seconds": 1.05,
+      "error": null
+    },
+    {
+      "name": "专业问题升级",
+      "input": "我这个合同纠纷能胜诉吗，帮我判断法律责任",
+      "passed": true,
+      "event": {
+        "event_type": "run_handoff_requested",
+        "event_data": {
+          "run_id": "run_ab901153f02c459bba85be30b93ebff4",
+          "reason_code": "LEGAL_ADVICE",
+          "queue_code": "platform_aftersales",
+          "summary": "用户就合同纠纷询问胜诉可能性并要求判断法律责任，属于需要专业律师出具的具体法律意见，需转人工/专业律师处理。",
+          "message": "你提到的问题涉及具体案情判断或法律意见，普通智能客服不能给出这类结论。我会记录你的诉求，由平台客服协助转交专业法律咨询渠道。",
+          "handoff_context": {
+            "intent": "LEGAL_ADVICE_REQUEST",
+            "primary_intent": "LEGAL_ADVICE_REQUEST",
+            "summary": "用户就合同纠纷询问胜诉可能性并要求判断法律责任，属于需要专业律师出具的具体法律意见，需转人工/专业律师处理。",
+            "order_id": null,
+            "after_sale_id": null,
+            "verified_slots": {},
+            "unverified_slots": {},
+            "conflicts": [],
+            "pending_intents": [],
+            "attempted_steps": [
+              "policy:handoff_requested"
+            ],
+            "failure_reason": "LEGAL_ADVICE",
+            "flow_node": "HANDED_OFF",
+            "flow_state_version": 0,
+            "source_message_ids": []
+          },
+          "flow_update": {
+            "patch_id": "run_ab901153f02c459bba85be30b93ebff4:flow:1",
+            "base_state_version": 0,
+            "turn_id": "accept_e2fd5afe67214e1aa7ef410bb8bcb7c9",
+            "flow_definition_version": "legal-support-flow-v1",
+            "changes": {
+              "flow_type": "LEGAL_ADVICE_REQUEST",
+              "node": "HANDED_OFF",
+              "slots": {},
+              "pending_intents": [],
+              "clarification_attempts": {},
+              "reset_flow": false
+            }
+          },
+          "plan": {
+            "flow_type": "LEGAL_ADVICE_REQUEST",
+            "node": "HANDED_OFF",
+            "selected_skill": "policy-service",
+            "allowed_tools": [],
+            "required_slots": [],
+            "missing_slots": [],
+            "allowed_next_actions": [
+              "HANDOFF"
+            ],
+            "target_resource": {},
+            "planned_action": "HANDOFF",
+            "allowed_action_codes": [],
+            "clarify_slot": null
+          }
+        }
+      },
+      "run_id": "run_ab901153f02c459bba85be30b93ebff4",
+      "intent": "LEGAL_ADVICE_REQUEST",
+      "tools": [],
+      "input_tokens": 2229,
+      "output_tokens": 156,
+      "elapsed_seconds": 1.17,
+      "error": null
+    }
+  ]
+}

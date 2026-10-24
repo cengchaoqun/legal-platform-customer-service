@@ -1,0 +1,37 @@
+# 本地开发与测试使用的基础设施。
+# 端口刻意避开宿主机默认 5432 / 6379，避免影响已有环境。
+# 三个业务库共用一个 PostgreSQL 实例，通过不同数据库名隔离：
+#   customer_service / ai_customer_service / legal_business
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: legal-support-postgres
+    environment:
+      POSTGRES_USER: legal
+      POSTGRES_PASSWORD: legal_dev_password
+      POSTGRES_DB: customer_service
+    ports:
+      - "55432:5432"
+    volumes:
+      - legal-support-pgdata:/var/lib/postgresql/data
+      - ./init-databases.sql:/docker-entrypoint-initdb.d/10-init-databases.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U legal -d customer_service"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: legal-support-redis
+    command: ["redis-server", "--appendonly", "no"]
+    ports:
+      - "56379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  legal-support-pgdata:

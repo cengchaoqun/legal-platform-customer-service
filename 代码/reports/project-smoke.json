@@ -1,0 +1,67 @@
+{
+  "scope": "只读集成检查；不等同于端到端业务/并发/模型验收",
+  "results": [
+    {
+      "check": "business_health",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "ai_health",
+      "status": 200,
+      "passed": true,
+      "runtime_mode": "DEEPSEEK"
+    },
+    {
+      "check": "customer_openapi",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "user_frontend",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "admin_frontend",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "own_orders",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "customer_history",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "customer_cannot_read_admin",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "order",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "order/invoice",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "order/service-progress",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "other_user_order_denied",
+      "status": 403,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
